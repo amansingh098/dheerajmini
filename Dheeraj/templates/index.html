@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Post Title</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body>
+    <div>
+    <h1>Enter Input Values</h1>
+    <form method="post" action="/">
+        <input type="text" name="value1" placeholder="studetent" required>
+        <input type="text" name="value2" placeholder="Value 2" required>
+        <input type="text" name="value3" placeholder="Value 3" required>
+        <input type="text" name="value4" placeholder="Value 4" required>
+        <input type="text" name="value5" placeholder="Value 5" required>
+        <input type="text" name="value6" placeholder="Value 6" required>
+        <input type="text" name="value7" placeholder="Value 7" required>
+        <input type="text" name="value8" placeholder="Value 8" required>
+        <input type="text" name="value9" placeholder="Value 9" required>
+        <input type="text" name="value10" placeholder="Value 10" required>
+        <input type="text" name="value11" placeholder="Value 10" required>
+        <br><br>
+        <input type="submit" value="Predict">
+
+        {% if prediction %}
+        <h2>Predicted Value: {{ prediction }}</h2>
+        {% endif %}
+        
+    </form>
+    </div>
+
+   
+</body>
+</html>
